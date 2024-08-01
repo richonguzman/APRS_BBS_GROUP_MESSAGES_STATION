@@ -20,7 +20,7 @@ Just send an APRS Message to the station *(currently CA2RXU-14)* and it will ans
 ### 1) Save Message from Station1 to Station2:
 - **"CHK"** ----> *ANSWER*: checks if the asking Station has a saved message in memory and answers it over APRS Message
 
-- **"S *Station* *MessageText*"** ---------------------> *Explanation*: Save a message for *Station* with the following message body / *ANSWER*: confirmation of message saved for *Station* with the *MessageText* as message body.
+- **"S *Station* *MessageText*"** ---(*Explanation*: Save a message for *Station* with the following message body) ---> *ANSWER*: confirmation of message saved for *Station* with the *MessageText* as message body.
 
 - **"R x"** -------------------> *ANSWER*: UTC Date and Time  + Callsing of the Station which sended the messageCurrent Weather data for the City. This info is generated as two APRS messages back to the asking station.
 
