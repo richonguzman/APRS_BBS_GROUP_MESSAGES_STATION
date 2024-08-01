@@ -35,7 +35,7 @@ Just send an APRS Message to the station *(currently CA2RXU-14)* and it will ans
 
 - **"UP *GROUPX* *MessageText*"** ---(*Explanation*: update/send *MessageText* to all Stations subscribed to *GroupX*) ---> *ANSWER* : "UPDATE *GroupX* | *MessageText*". This will generate a message to all subscribed stations to *GroupX* which will get a copy of the original message but won't send a copy to the creator of the original message.
 
-NOTE: I will retain the power to create or delete any group to retain a little control over bad ussage of this station.
+NOTE: I will retain the power to create or delete any group to retain a little control over bad ussage of this station. So write me over **Issues** here on github to create a requested group for testing.
 
 -----
 ### CONTACT ME
