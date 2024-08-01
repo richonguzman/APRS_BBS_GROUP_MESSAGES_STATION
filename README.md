@@ -4,7 +4,7 @@ This Repository has the info of APRS_BBS_GROUP_MESSAGES_STATION *(currently CA2R
 
 ### What is it?
 This Station is running on a ESP32S2 board (coded over C++) connected to APRS-IS feed and it has two goals:
-1) Save messages from *Station1* to *Station2* when *Station2* is not available. Later *Station2* can ask for saved messages and receive them as messages from this APRS_BBS_GROUP_MESSAGES_STATION.
+1) Save messages from *Station1* to *Station2* when *Station2* is not available. Then , when *Station2* is connected, it can ask for saved messages and receive them as messages from this APRS_BBS_GROUP_MESSAGES_STATION.
 2) Generate Groups of Stations to share a message to all the subscribed stations in this Group.
 
 ### How to contact it?
