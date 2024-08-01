@@ -18,16 +18,14 @@ Just send an APRS Message to the station *(currently CA2RXU-14)* and it will ans
 -----
 
 ### 1) Save Message from Station1 to Station2:
-- **"CHK"** ----> *ANSWER*: checks if the asking Station has a saved message in memory and answers it over APRS Message
+- **"CHK"** ---(*Explanation*: Check if asking station has a message saved) ---> *ANSWER*: Number of saved message in memory.
 
 - **"S *Station* *MessageText*"** ---(*Explanation*: Save a message for *Station* with the following message body) ---> *ANSWER*: confirmation of message saved for *Station* with the *MessageText* as message body.
 
-- **"R x"** -------------------> *ANSWER*: UTC Date and Time  + Callsing of the Station which sended the messageCurrent Weather data for the City. This info is generated as two APRS messages back to the asking station.
+- **"R X"** ---(*Explanation*: Read message X from memory) ---> *ANSWER*: UTC Date and Time of the saved message  + Callsing of the Station which sended the original message + the body of the message saved.
 
+- **"D X"** ---(*Explanation*: Delete message X from memory) ---> *ANSWER*: Confirmation of message X deleted from memory.
   
-- **"WL *city*"** ------------------> *ANSWER*: Current Weather data for the City but encoded for LoRa APRS Trackers. This info is generated as one APRS message back to the asking LoRa station/tracker.
-  
-
 -----
 
 ### Station Queries are:
