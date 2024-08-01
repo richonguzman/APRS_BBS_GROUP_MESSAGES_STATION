@@ -29,11 +29,13 @@ Just send an APRS Message to the station *(currently CA2RXU-14)* and it will ans
 -----
 
 ### 2) Group Messages:
-- **"SUB *GROUP1*"** ---(*Explanation*: subscribe asking *Station* to *Group1*) ---> *ANSWER* : Confirmation of subscription to *Group1*.
+- **"SUB *GROUPX*"** ---(*Explanation*: subscribe to *GroupX*) ---> *ANSWER* : Confirmation of subscription to *GroupX*.
 
-- **"UNSUB *GROUP1*"** ---(*Explanation*: unsubscribe asking *Station* to *Group1*) ---> *ANSWER* : Confirmation of unsubscription to *Group1*.
+- **"UNSUB *GROUPX*"** ---(*Explanation*: unsubscribe from *GroupX*) ---> *ANSWER* : Confirmation of unsubscription from *GroupX*.
 
-- **"UP *GROUP1* *MessageText*"** ---(*Explanation*: update/send *MessageText* to all Stations subscribed to *Group1*) ---> *ANSWER* : "UPDATE *Group1* | *MessageText*"
+- **"UP *GROUPX* *MessageText*"** ---(*Explanation*: update/send *MessageText* to all Stations subscribed to *GroupX*) ---> *ANSWER* : "UPDATE *GroupX* | *MessageText*". This will generate a message to all subscribed stations to *GroupX* which will get a copy of the original message but won't send a copy to the creator of the original message.
+
+NOTE: I will retain the power to create or delete any group to retain a little control over bad ussage of this station.
 
 -----
 ### CONTACT ME
