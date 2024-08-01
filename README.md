@@ -17,32 +17,23 @@ Just send an APRS Message to the station *(currently CA2RXU-14)* and it will ans
 
 -----
 
-### 1) Save Message from Station1 to Station2:
-- **"CHK"** ---(*Explanation*: Check if asking station has a message saved) ---> *ANSWER*: Number of saved message in memory.
+### 1) Messages Queries from Station1 to Station2:
+- **"CHK"** ---(*Explanation*: Check if asking Station1 has a message saved) ---> *ANSWER*: Number of saved message in memory.
 
-- **"S *Station* *MessageText*"** ---(*Explanation*: Save a message for *Station* with the following message body) ---> *ANSWER*: confirmation of message saved for *Station* with the *MessageText* as message body.
+- **"S *Station2* *MessageText*"** ---(*Explanation*: Save a message from *Station1* to *Station2* with the following message body) ---> *ANSWER*: confirmation of message saved for *Station2* with the *MessageText* as message body.
 
-- **"R X"** ---(*Explanation*: Read message X from memory) ---> *ANSWER*: UTC Date and Time of the saved message  + Callsing of the Station which sended the original message + the body of the message saved.
+- **"R X"** ---(*Explanation*: Read message number X from memory for asking *Station1*) ---> *ANSWER*: UTC Date and Time of the saved message  + Callsing of the (other) Station which sended the original message + the body of the message saved.
 
-- **"D X"** ---(*Explanation*: Delete message X from memory) ---> *ANSWER*: Confirmation of message X deleted from memory.
+- **"D X"** ---(*Explanation*: Delete message X from memory for asking *Station1*) ---> *ANSWER*: Confirmation of message X deleted from memory.
   
 -----
 
-### Station Queries are:
-- **"HELP"** or **"H"** or **"?"** ------> *ANSWER* : "Send: '?APRS?'(Queries) 'WRH'(Weather) 'W City'(Weather City)"
-  Just a small guide about commands/queries it can answer.
-  
-- **"?APRS?"** ------------------> *ANSWER* : "?APRSV ?APRSP ?APRSL ?APRSH ?WHERE callsign ?UTC""
-  Just a small guide about **?APRS?** queries it can answer.
-  
-- **"?APRSV"** ------------------> *ANSWER* : Current Software Name and Version running on the station.
-  
-- **"?APRSP"** ------------------> *ANSWER* : Current GPS position (QTH) of the station.
-  
-- **"?APRSL"** ------------------> *ANSWER* : "Still in development 73!" 
-  
-- **"?UTC"** --------------------> *ANSWER* : UTC Date and Time extracted from NTP Servers.
+### 2) Group Messages:
+- **"SUB *GROUP1*"** ---(*Explanation*: subscribe asking *Station* to *Group1*) ---> *ANSWER* : Confirmation of subscription to *Group1*.
 
+- **"UNSUB *GROUP1*"** ---(*Explanation*: unsubscribe asking *Station* to *Group1*) ---> *ANSWER* : Confirmation of unsubscription to *Group1*.
+
+- **"UP *GROUP1* *MessageText*"** ---(*Explanation*: update/send *MessageText* to all Stations subscribed to *Group1*) ---> *ANSWER* : "UPDATE *Group1* | *MessageText*"
 
 -----
 ### CONTACT ME
